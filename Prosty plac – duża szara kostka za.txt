@@ -1,0 +1,11 @@
+// Prosty plac – duża szara kostka zamiast fontanny
+const plaza = new THREE.Mesh(
+    new THREE.BoxGeometry(20, 1, 20),
+    new THREE.MeshStandardMaterial({ color: 0xaaaaaa })
+);
+plaza.position.y = 0.5;
+scene.add(plaza);
+
+// Kamera skierowana na plac
+camera.position.set(30, 30, 30);
+camera.lookAt(0, 0, 0);
